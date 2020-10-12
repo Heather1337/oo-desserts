@@ -46,6 +46,11 @@ class Cupcake:
 
         return f'<Cupcake name="{self.name}" qty={self.qty}>'
 
+class Brownie(Cupcake):
+    def __init__(self, name, price):
+        super().__init__(name, "chocolate", price)
+
+
 
 if __name__ == '__main__':
     import doctest
